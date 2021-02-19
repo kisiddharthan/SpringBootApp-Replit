@@ -26,6 +26,7 @@ public class GreetingController {
 
   @PostMapping("/greeting")
   public Greeting greeting(@RequestBody Person person) {
-    return new Greeting(counter.getAndIncrement(), String.format(template, person.getName()));
+
+    return new Greeting(Math.round(person.getNum()/10.0) * 10, String.format(template, person.getName()));
   }
 }

@@ -36,8 +36,8 @@
 			<scope>test</scope>
 			<exclusions>
 				<exclusion>
-					<groupId>org.junit.vintage</groupId>
-					<artifactId>junit-vintage-engine</artifactId>
+					<groupId>junit-jupiter-engine</groupId>
+					<artifactId>junit-jupiter-engine</artifactId>
 				</exclusion>
 			</exclusions>
 		</dependency>
