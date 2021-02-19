@@ -1,24 +1,17 @@
 package com.example.restservice;
 
-import java.util.ArrayList;
-import java.util.List;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
 
 public class Greeting {
 
+  @Getter
 	private final long id;
+  @Getter
 	private final String content;
-  private List<String> list = new ArrayList<>();
 
 	public Greeting(long id, String content) {
 		this.id = id;
 		this.content = content;
-	}
-
-	public long getId() {
-		return id;
-	}
-
-	public String getContent() {
-		return content;
 	}
 }
